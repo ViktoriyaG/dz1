@@ -1,0 +1,28 @@
+{
+  "name": "dz1",
+  "version": "0.0.0",
+  "authors": [
+    "ViktoriyaG <vita-gladka@rambler.ru>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "modernizer": "~2.8.2",
+    "jquery": "~2.1.4"
+  }
+}
