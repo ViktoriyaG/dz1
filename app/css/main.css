@@ -1,0 +1,344 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: url('../img/bg.png') repeat;
+	font: normal 1em 'fira_sanslight';
+	color: #4a545d;
+}
+/*Прибываем футер к низу сайта*/
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	min-width: 970px;
+	height: auto!important;
+}
+
+.wrapper:after{
+	content: "";
+	height: 80px;
+	display: block;
+}
+
+.page-footer {
+	min-width: 970px;
+	height: 80px;
+	margin-top: -80px;
+}
+
+/*Конец Прибываем футер к низу сайта*/
+/*Шапка*/
+.container-big {
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.page-header {
+	height: 119px;
+	background: #eff3f7 url('../img/line.png') bottom center no-repeat;
+	position: relative;
+	margin-bottom: 39px;	
+}
+
+.page-header .header-logo-link {
+	position: absolute;
+	top: 39px;
+	left: 0;
+}
+
+.page-header .header-logo-text {
+	position: absolute;
+	left: -9999px;
+}
+
+.page-header .socials {
+	position: absolute;
+	right: 0;
+	top: 36px;
+}
+
+/*соц кнопки*/
+.socials {
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
+}
+
+.socials .socials-item {
+	list-style: none;
+	display: inline-block;
+	height: 47px;
+	width: 47px;
+	margin-left: 19px;
+}
+
+.socials .socials-item:first-child {
+	margin-left: 0;
+} 
+
+.socials .socials-link {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-indent: -9999px;
+	background: url('../img/soc-button.png') no-repeat;
+}
+
+.socials .socials-link.vk {background-position: -2px -3px;}
+.socials .socials-link.tw {background-position: -71px -3px;}
+.socials .socials-link.fb {background-position: -140px -3px;}
+.socials .socials-link.gh {background-position: -209px -3px;}
+.socials .socials-link.vk:hover {background-position: -2px -65px;}
+.socials .socials-link.tw:hover {background-position: -71px -65px;}
+.socials .socials-link.fb:hover {background-position: -140px -65px;}
+.socials .socials-link.gh:hover {background-position: -209px -65px;}
+
+/*Конец шапки*/
+
+/*Левый столбец*/
+.sidebar {
+	width: 250px;
+	float: left;
+}
+
+/*Навигация*/
+.navigation{
+	overflow: hidden;
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.navigation .navigation-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation .navigation-item {
+	border-top: 2px solid #3ba8c0;
+	margin: 0 11px;
+}
+.navigation .navigation-item:first-child{
+	border-top: none;
+}
+/* Навигация - текущий пункт меню*/
+.navigation .navigation-item.current{	
+	background: #3ba8c0;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 11px;
+	margin-bottom: -2px; /* Хак */
+}
+
+.navigation .navigation-item.current .navigation-link{
+	color: #f9fafb;
+	font-size: 22px;
+}
+/* Навигация - текущий пункт меню - конец */
+
+.navigation .navigation-link {
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #959aa8;
+	margin-left: 16px;
+	padding: 20px 0px;
+}
+.navigation .navigation-link:hover{
+	color: #3ba8c0;
+} 
+/* Навигация - конец */
+
+/*Контакты*/
+.contacts {
+	overflow: hidden;
+	background: #3ba8c0;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.contacts .contacts-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.contacts .contacts-item {
+	/*border-top: 2px solid #3ba8c0;*/
+	margin: 0 11px;
+	position: relative;
+
+}
+.contacts .contacts-item.mail{	
+	background: #41b9d4;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 70px;
+}
+.contacts .contacts-item.mail:before { 
+	content: url(../img/mail.png);
+	background-repeat: no-repeat;
+	display: block;
+	/*Выравнивание по вертикали*/
+	position: absolute;
+	top: 10px;
+/*	top: 50%;*/
+	/*Внимание!Не работает в старых IE (считайте вручную для каждой иконки)*/
+/*	transform: translateY(-50%) translateX(-50%); */
+	left: 40px;
+}
+.contacts .contacts-item.tel{	
+	background: #48cbe8;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 70px;
+}
+.contacts .contacts-item.tel:before { 
+	content: url(../img/phone.png);
+	background-repeat: no-repeat;
+	display: block;
+	/*Выравнивание по вертикали*/
+	position: absolute;
+	top: 10px;
+/*	top: 50%;*/
+	/*Внимание!Не работает в старых IE (считайте вручную для каждой иконки)*/
+/*	transform: translateY(-50%) translateX(-50%); */
+	left: 40px;
+}
+.contacts .contacts-item.skype{	
+	background: #51daf8;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 70px;
+}
+.contacts .contacts-item.skype:before { 
+	content: url(../img/skype.png);
+	background-repeat: no-repeat;
+	display: block;
+	/*Выравнивание по вертикали*/
+	position: absolute;
+	top: 10px;
+/*	top: 50%;*/
+	/*Внимание!Не работает в старых IE (считайте вручную для каждой иконки)*/
+/*	transform: translateY(-50%) translateX(-50%); */
+	left: 40px;
+}
+.contacts .contacts-link {
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 17px;
+	font-style: normal;
+	text-decoration: none;
+	color: #fff;
+	margin-left: 16px;
+	padding: 6px 0px 7px 0px;
+}
+.contacts .contacts-link:hover{
+	text-decoration: underline;
+} 
+.contacts .contacts-header {
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 21px;
+	font-style: normal;
+	text-decoration: none;
+	color: #fff;
+	margin-left: 10px;
+	padding: 5px 0px 0px 0px;
+}
+/*Конец контактов*/
+
+/* Главная область */
+.variable-content{
+	width: 650px;
+	float: right;
+}
+
+.variable-content {
+	width: 650px;
+	float: right;
+}
+/*Подвал*/
+.page-footer {
+	background: #eff3f7 url('../img/line.png') top center no-repeat;
+	font-family: 'fira_sanslight';
+	color: #4a545d;
+}
+
+.page-footer .container {
+	padding-top: 23px;
+	position: relative;
+}
+
+/*Градиентная линия*/
+.page-footer .copyright {
+	margin: 0 180px;
+	padding-top: 7px;
+	text-align: center;
+	font-size: 13px;
+}
+
+/*Авторизация*/
+.page-footer .lock {
+	position: absolute;
+	top: 26px;
+	left: 20px;
+}
+
+.lock .lock-inner {
+	display: block;
+	height: 40px;
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+	line-height: 2.2;
+	color:#4a545d;
+	text-decoration: none;
+	background: url('../img/lock.png') no-repeat;
+	padding-left: 24px;
+}
+
+.lock .lock-inner:hover{
+	text-decoration: underline;
+	background: url('../img/lock-exit.png') no-repeat;
+}
+
+/*Конец блока Авторизация*/
+/*Конец подвала*/
+
+/*Общие классы*/
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*Центрирование текста*/
+.text-center{
+	text-align: center;
+}
+
+/*ысплывание слева*/
+.pull-left {
+	float: left;
+}
+
+/*всплывание справа*/
+.pull-right {
+	float: right;
+}
+
+/*clearfix*/
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.container:after, .clearfix:after {
+	clear: both;
+}
+/*конец clearfix*/
+/**/
