@@ -1,4 +1,4 @@
-html {
+﻿html {
 	height: 100%;
 }
 
@@ -43,6 +43,7 @@ body {
 	background: #eff3f7 url('../img/line.png') bottom center no-repeat;
 	position: relative;
 	margin-bottom: 39px;	
+
 }
 
 .page-header .header-logo-link {

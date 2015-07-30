@@ -1,0 +1,77 @@
+/*Заголовок над формой*/
+.formbox-wrap{
+	background: #eff3f7;	
+}
+
+.formbox {
+	background: #48cbe8;
+	border-radius: 4px;
+	margin-bottom: 42px;
+}
+
+.formbox .form-header {
+	border-bottom: 18px #67dffa solid;
+	padding: 23px 58px 18px 58px;
+}
+
+.form-header-text {
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #fff;
+	line-height: 30px;
+
+}
+/*Конец заголовка над формой*/
+/*Форма*/
+.form-content {
+	padding: 0 124px; /*выравнивание формы на странице*/
+}
+
+.input-form {
+	margin-bottom: 10px; /*вертикальные отступы между блоками в форме*/
+}
+
+.form-label {
+	font-style: 'fira_sanslight';
+	font-size: 19px;
+	color: #959aa8;
+}
+
+.form-element {
+	 outline: none; /*Убираем подсветку полей в хроме и сафари*/
+	 border: 1px #48cbe8 solid;
+	 font-style: 'fira_sanslight';
+	 font-size: 13px;
+	 color: #48cbe8;
+	 padding: 10px 8px;
+	 width: 176px;
+
+}
+
+/*Поле ввода сообщения*/
+.form-textarea {
+	resize: none; /*Запрещаем изменять размер*/
+	height: 180px;
+	width: 403px;
+}
+
+.input-form-name {
+	width: 201px;
+	float: left;
+}
+.input-form-email{
+	width: 201px;
+	float: right;
+}
+
+/*Стили для пласхолдер*/
+input::-webkit-input-placeholder {color: #48cbe8;}
+input:-moz-placeholder {color: #48cbe8;}
+textarea::-webkit-input-placeholder {color: #48cbe8;}
+textarea:-moz-placeholder {color: #48cbe8;}
+/*Конец Стили для пласехолдер*/
+
+/*Конец формы*/
+
+
