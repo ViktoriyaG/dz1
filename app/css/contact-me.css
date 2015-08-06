@@ -1,12 +1,15 @@
 /*Заголовок над формой*/
 .formbox-wrap{
 	background: #eff3f7;	
+	margin-bottom: 26px;
+	padding-bottom: 40px;
 }
 
 .formbox {
 	background: #48cbe8;
 	border-radius: 4px;
 	margin-bottom: 42px;
+
 }
 
 .formbox .form-header {
@@ -25,7 +28,9 @@
 /*Конец заголовка над формой*/
 /*Форма*/
 .form-content {
-	padding: 0 124px; /*выравнивание формы на странице*/
+	/*padding: 0 124px; выравнивание формы на странице*/
+	width: 402px;
+	margin: 0px auto;
 }
 
 .input-form {
@@ -46,24 +51,28 @@
 	 color: #48cbe8;
 	 padding: 10px 8px;
 	 width: 176px;
+	 border-radius: 4px;
 
 }
 
 /*Поле ввода сообщения*/
 .form-textarea {
 	resize: none; /*Запрещаем изменять размер*/
-	height: 180px;
-	width: 403px;
+	height: 160px;
+	width: 385px;
+	display: block;
+
 }
 
 .input-form-name {
-	width: 201px;
+	width: 48%;
 	float: left;
 }
 .input-form-email{
-	width: 201px;
+	width: 48%;
 	float: right;
 }
+
 
 /*Стили для пласхолдер*/
 input::-webkit-input-placeholder {color: #48cbe8;}
@@ -71,6 +80,54 @@ input:-moz-placeholder {color: #48cbe8;}
 textarea::-webkit-input-placeholder {color: #48cbe8;}
 textarea:-moz-placeholder {color: #48cbe8;}
 /*Конец Стили для пласехолдер*/
+
+/*кнопки*/
+.submit-button {
+border-radius: 5px;
+background-color: #48CBE8;
+height: 33px;
+border-style: solid;
+border-color: #3BA8C0;
+-moz-border-top-colors: none;
+-moz-border-right-colors: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+border-width: 0px 0px 2px;
+color: #F6F6F6;
+font-family: "fira_sansbook";
+font-size: 20px;
+padding: 0px 20px;
+}
+
+.submit-button:hover {
+    border-bottom: medium none;
+}
+.submit-button:active {
+    border-top: 2px solid #3BA8C0;
+}
+
+.reset-button {
+	float: right;
+	background: #849DB5 none repeat scroll 0% 0%;
+	border-color: #687B8F;
+}
+
+/*блок с капчей*/
+.captcha-wrap {
+margin: 0px auto 20px;
+}
+.input-captcha {
+	width: 41%;
+	margin-top: 21px;
+	padding: 6px 12px;
+}
+.floating-left {
+	float: left;
+}
+
+.floating-right {
+	float: right;
+}
 
 /*Конец формы*/
 
